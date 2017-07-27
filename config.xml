@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<widget id="org.jerm.jms" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>JMS</name>
+    <description>JMS HTML5</description>
+
+    <author email="bukman@jermtechnology.com" href="http://www.jermtechnology.com">Jerm Technology</author>
+    <content src="index.html" />
+    <preference name="phonegap-version" value="cli-6.3.0" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="android-minSdkVersion" value="14"/>
+    
+    <!-- use latest version of phonegap...this version is displayed in the phonegap web -->
+    <preference name="phonegap-version" value="cli-6.5.0" />
+
+    <allow-navigation href="*" />
+    <access origin="*" />
+
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="market:*" />
+
+
+    <platform name="android">
+      <icon src="data/JMS.png" width="48" height="48" />
+      <splash src="data/JMS.png" width="180" height="180" />
+    </platform>
+
+    <plugin name="cordova-plugin-whitelist" />
+
+    <!-- plugins to add custom permisions -->
+    <plugin name="cordova-plugin-camera" />
+    <plugin name="cordova-plugin-geolocation" />
+
+</widget>
+
