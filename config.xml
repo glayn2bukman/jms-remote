@@ -10,9 +10,12 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
     
-    <preference name="Fullscreen" value="true" />
+    <preference name="cordova-custom-config-autorestore" value="true" />
+
     
-    <preference name="android-windowSoftInputMode" value="adjustPan|adjustResize" />
+    <!--
+        <preference name="android-windowSoftInputMode" value="adjustPan|adjustResize" />
+    -->
     <!-- use latest version of phonegap...this version is displayed in the phonegap web -->
     <preference name="phonegap-version" value="cli-6.5.0" />
 
@@ -29,8 +32,10 @@
 
 
     <platform name="android">
-      <icon src="data/JMS.png" width="48" height="48" />
-      <splash src="data/JMS.png" width="180" height="180" />
+      <icon src="data/JMS.png" />
+      <splash src="data/JMS.png" />
+      <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
+
     </platform>
 
     <plugin name="cordova-plugin-whitelist" />
