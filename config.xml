@@ -10,10 +10,7 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
     
-    <!--
-        <preference name="android-windowSoftInputMode" value="visible|adjustPan" />
-    -->
-    <preference name="android-configChanges" value="keyboard|keyboardHidden|screenLayout|screenSize|orientation" />
+    <preference name="android-windowSoftInputMode" value="adjustPan" />
     <!-- use latest version of phonegap...this version is displayed in the phonegap web -->
     <preference name="phonegap-version" value="cli-6.5.0" />
 
