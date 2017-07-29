@@ -9,10 +9,7 @@
     <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
-    
-    <preference name="cordova-custom-config-autorestore" value="true" />
-
-    
+        
     <!--
         <preference name="android-windowSoftInputMode" value="adjustPan|adjustResize" />
     -->
@@ -34,8 +31,6 @@
     <platform name="android">
       <icon src="data/JMS.png" />
       <splash src="data/JMS.png" />
-      <preference name="android-swindowSoftInputMode" value="adjustPan" />
-
     </platform>
 
     <plugin name="cordova-plugin-whitelist" />
@@ -43,6 +38,8 @@
     <!-- plugins to add custom permisions -->
     <plugin name="cordova-plugin-camera" />
     <plugin name="cordova-plugin-geolocation" />
+
+    <hook type="before_build" src="scripts/appBeforeBuild.js" />
 
 </widget>
 
