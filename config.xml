@@ -34,7 +34,7 @@
     <platform name="android">
       <icon src="data/JMS.png" />
       <splash src="data/JMS.png" />
-      <preference name="android-manifest/application/activity/@android:windowSoftInputMode" value="adjustPan" />
+      <preference name="android-swindowSoftInputMode" value="adjustPan" />
 
     </platform>
 
