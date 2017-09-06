@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 
-<widget id="org.jerm.jmsremote" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>JMS-RT</name>
+<widget id="org.jerm.jms" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>JMS</name>
     <description>JMS HTML5</description>
 
     <author email="bukman@jermtechnology.com" href="http://www.jermtechnology.com">Jerm Technology</author>
@@ -9,13 +9,9 @@
     <preference name="phonegap-version" value="cli-6.3.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="14"/>
-        
-    <!--
-        <preference name="android-windowSoftInputMode" value="adjustPan" />
-    -->
-
+    
     <!-- use latest version of phonegap...this version is displayed in the phonegap web -->
-    <preference name="phonegap-version" value="cli-6.5.0" />
+    <!-- <preference name="phonegap-version" value="cli-6.5.0" /> -->
 
     <allow-navigation href="*" />
     <access origin="*" />
@@ -29,10 +25,12 @@
     <allow-intent href="market:*" />
 
 
-    <platform name="android">
-      <icon src="data/JMS.png" />
-      <splash src="data/JMS.png" />
-    </platform>
+    <!-- <platform name="android">
+      <icon src="data/JMS.png" width="48" height="48" />
+      <splash src="data/JMS.png" width="180" height="180" />
+    </platform> -->
+
+    <icon src="data/JMS.png" gap:role="default" />
 
     <plugin name="cordova-plugin-whitelist" />
 
